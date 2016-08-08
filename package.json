@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "colors": "*",
-    "event-pubsub": "^2.0.0",
+    "event-pubsub": "github:hxsf/event-pubsub",
     "js-message": "*",
     "js-queue": "^0.1.2",
     "node-cmd": "*"
@@ -30,7 +30,7 @@
     "coverup": "cat ./spec/coverage/lcov.info | codacy-coverage"
   },
   "pre-commit": [
-      "cover"
+    "cover"
   ],
   "keywords": [
     "IPC",

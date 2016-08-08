@@ -36,6 +36,7 @@ ipc.connectTo(
             'app.message',
             function(data){
                 ipc.log('got a message from world : ', data);
+                ipc.disconnect('world')
             }
         );
 

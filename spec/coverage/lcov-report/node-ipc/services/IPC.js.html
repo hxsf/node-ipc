@@ -815,7 +815,7 @@ function disconnect(id){
 &nbsp;
     this.of[id].explicitlyDisconnected=true;
 &nbsp;
-    this.of[id].off('*');
+    this.of[id].off('*', '*');
     <span class="missing-if-branch" title="else path not taken" >E</span>if(this.of[id].socket){
         <span class="missing-if-branch" title="else path not taken" >E</span>if(this.of[id].socket.destroy){
             this.of[id].socket.destroy();
